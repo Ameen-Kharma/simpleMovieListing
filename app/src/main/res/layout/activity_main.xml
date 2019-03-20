@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tasks.android.yamsafertask.MainActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+
+<TextView
+    android:id="@+id/text_baka"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:textSize="14dp"
+    android:text="Movies DB"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movies_recycler"
+        android:layout_below="@+id/text_baka"
+        android:layout_above="@+id/bottom_bar">
+    </android.support.v7.widget.RecyclerView>
+
+<LinearLayout
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:background="#eee"
+    >
+
+
+    <TextView
+        android:id="@+id/star_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stars"
+        android:textColor="#44f"
+        android:layout_marginLeft="22dp"
+        android:textSize="15dp"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:background="#7777"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="33dp"/>
+
+    <TextView
+        android:id="@+id/popularity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:text="popularity"
+        android:textColor="#44f"
+        android:textSize="15dp"
+
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="12dp"
+        android:background="#7777"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="22dp"/>
+
+    <TextView
+        android:id="@+id/relase_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relase Year"
+        android:textColor="#44f"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="44dp"
+        android:textSize="15dp"
+        />
+</LinearLayout>
+
+</RelativeLayout>
